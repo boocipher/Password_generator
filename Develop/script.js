@@ -4,8 +4,8 @@ var generateBtn = document.querySelector("#generate");
 // Array of options
 // TODO - add array values
 var lowerOptions = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-var upperOptions = lowerOptions.toUpperCase();
-console.log(upperOptions);
+// var upperOptions = lowerOptions.toUpperCase();
+// console.log(upperOptions);
 var numOptions = ["0123456789"];
 var charOptions = ["!@#$%^&*()_+~`|}{[]\:;?><,./-="];
 
@@ -31,18 +31,17 @@ function generatePassword() {
 //show prompt until result is >= 8 or <=128 w/ while loop
 function promptPWlength() {
   var length;
+  // if (!length) {
+  //   return;
+  // }
   while (isNaN(length) || length < 8 || length > 128) {
     var pwLength = prompt("Please choose a number between 8 and 128 for the password length");
     length = parseInt(pwLength);
     console.log(length);
   } 
   return length;
-
-  if (!length) {
-    return;
-  }
-
 }
+
 //Prompt user for lowercase
 function lowerCase() {
   var lowerCase = confirm("Do you want to include lower case characters? Press OK for Yes, otherwise press Cancel");
