@@ -1,10 +1,19 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// Array of options
+// TODO - add array values
+var lowerOptions = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+var upperOptions = lowerOptions.toUpperCase();
+console.log(upperOptions);
+var numOptions = ["0123456789"];
+var charOptions = ["!@#$%^&*()_+~`|}{[]\:;?><,./-="];
+
+
 //Main function
 function generatePassword() {
   var length = promptPWlength();
-  console.log("promptPWlength vurna:" + length);
+  console.log("promptPWlength is:" + length);
   // lowerCase();
   // upperCase();
   // numeric();
@@ -13,7 +22,10 @@ function generatePassword() {
   var pass = "1234";
   // generate password
   return pass;
+
 }
+
+
 
 //Prompt user to define PW length
 //show prompt until result is >= 8 or <=128 w/ while loop
@@ -25,8 +37,12 @@ function promptPWlength() {
     console.log(length);
   } 
   return length;
-}
 
+  if (!length) {
+    return;
+  }
+
+}
 //Prompt user for lowercase
 function lowerCase() {
   var lowerCase = confirm("Do you want to include lower case characters? Press OK for Yes, otherwise press Cancel");
