@@ -14,7 +14,7 @@ This project is a simple and interactive password generator app for Google Chrom
 
 
 ## Usage
-The Password_generator is deployed via GitHub pages and can be accessed at [https://boocipher.github.io/Password_generator/](https://boocipher.github.io/Password_generator/)
+The Password_generator is deployed via GitHub pages and can be accessed at [https://boocipher.github.io/Password_generator/](https://boocipher.github.io/Password_generator/). Just hit the **Generate Password** button and follow the prompts.
 <br> Below are some screenshots of the page, some of the prompts that the user will get as well as an example of a generated password as a result.
 <br> 
 <br> 
